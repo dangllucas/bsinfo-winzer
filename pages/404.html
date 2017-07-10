@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="eng" lang="eng">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Lost in Space - Error 404</title>
+    <link href='http://fonts.googleapis.com/css?family=Bangers&amp;v2' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" type="text/css" href="../styles/404/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/404/main.css"/>
+    <script src="../script/jquery.min.js"></script>
+    <script src="../script/jquery.spritely.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+            $(document).ready(function () {
+                $('#astronaut')
+                    .sprite({fps: 30, no_of_frames: 1})
+                    .spRandom({top: 30, bottom: 200, left: 30, right: 200});
+                $('#space').pan({fps: 40, speed: 3, dir: 'right', depth: 50});
+            });
+        })(jQuery);
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="stage" class="stage">
+        <div id="space" class="stage"></div>
+        <div id="astronaut" class="stage">
+            <div id="text_1">Houston,<br/>we have a<br/>problem!</div>
+            <div id="text_2">Error 404!</div>
+            <div id="text_3">The universe<br/>you are looking for<br/>doesn't exist</div>
+            <div id="text_4">Try to visit another dimension</div>
+            <div class="search_box">
+                <button onclick="window.history.back()"></button>
+            </div>
+            <div class="search_box">
+                <form id="searchform" action="" method="get">
+                    <button class="" onclick="window.history.back()">Or just go back</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

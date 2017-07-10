@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Winzer Ancelotti</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link href="fonts/montserrat" rel="stylesheet" type="text/css">
+    <link href="fonts/lato" rel="stylesheet" type="text/css">
+
+    <script src="script/jquery.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+
+    <script src="script/script.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<div class="jumbotron text-center">
+    <h1>Winzer Ancelotti</h1>
+    <p>Wir können nicht nur Wein</p>
+    <form class="form-inline">
+        <div class="input-group">
+            <input type="email" class="form-control" size="50" placeholder="Email Adresse" required>
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#newsletterAdded">
+                    Abonnieren
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="newsletterAdded" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Newsletter abonniert.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Winzer Ancelotti</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">INFOS</a></li>
+                <li><a href="#products">PRODUKTE</a></li>
+                <li><a href="#portfolio">STANDORTE</a></li>
+                <li><a href="#pricing">PAKETE</a></li>
+                <li><a href="#contact">KONTAKT</a></li>
+                <li><a href="resources/wines.xml">WEINE</a></li>
+                <li><a href="pages/impressum.html">IMPRESSUM</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="about" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>Informationen</h2>
+            <h4>Seit vielen Jahren arbeiten wir nun an unseren perfekten Weinen.<br>
+                Dies machte es uns möglich unsere Verkaufszahlen zu steigern und unsere Qualität zu verbessern.</h4>
+            <p>Durch unsere vielfältigen Verbindungen zu anderen Winzern ist unsere Produktpalette nahezu endlos.<br>
+                Beschränkt wird all dies nur durch die Anzahl der verschiedenen Weinsorten.</p>
+            <button class="btn btn-default btn-lg"><a href="pages/404.html">Mehr Informationen</a></button>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-signal logo"></span>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-grey">
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-globe logo"></span>
+        </div>
+        <div class="col-sm-8">
+            <h2>Unsere Aufgaben</h2>
+            <h4><strong>MISSION:</strong> Unsere Mission ist auf der ganzen Welt den besten Wein anbieten zu können.
+            </h4>
+            <p><strong>VISION:</strong> Unsere Vision ist weltweit der führende Winzer zu werden.</p>
+        </div>
+    </div>
+</div>
+
+<div id="products" class="container-fluid text-center">
+    <h2>PRODUKTE</h2>
+    <h4>Was wir anbieten</h4>
+    <br>
+    <div class="row">
+        <div class="col-sm-4 slideanim">
+            <a class="glyphicon glyphicon-glass logo-small" href="resources/wines.xml"></a>
+            <h4>Weißweine</h4>
+            <p>Erzeugt aus hellen Trauben</p>
+        </div>
+        <div class="col-sm-4 slideanim">
+            <a class="glyphicon glyphicon-glass logo-small" href="resources/wines.xml"></a>
+            <h4>Roseweine</h4>
+            <p>Erzeugt aus dunklen Trauben</p>
+        </div>
+        <div class="col-sm-4 slideanim">
+            <a class="glyphicon glyphicon-glass logo-small" href="resources/wines.xml"></a>
+            <h4>Rotweine</h4>
+            <p>Erzeugt aus dunklen Trauben</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-sm-4 slideanim">
+            <a class="glyphicon glyphicon-glass logo-small" href="resources/wines.xml"></a>
+            <h4>Perlweine</h4>
+            <p>Wenig Kohlensäure für vollen Geschmack</p>
+        </div>
+        <div class="col-sm-4 slideanim">
+            <a class="glyphicon glyphicon-glass logo-small" href="resources/wines.xml"></a>
+            <h4>Schaumweine</h4>
+            <p>Sekt. Der Klassiker zum anstoßen</p>
+        </div>
+        <div class="col-sm-4 slideanim">
+            <a class="glyphicon glyphicon-glass logo-small" href="resources/wines.xml"></a>
+            <h4>Likörweine</h4>
+            <p>Mehr Alkohol. Mehr Spaß.</p>
+        </div>
+    </div>
+    <br>
+    <button class="btn btn-lg slideanim"><a href="resources/wines.xml">Zu den Weinen</a></button>
+</div>
+
+<div id="portfolio" class="container-fluid text-center bg-grey">
+    <h2>Standorte</h2>
+    <h4>Wo arbeiten wir</h4>
+    <div class="row text-center">
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="images/place1.jpg" alt="Bodensee" href="#map">
+                <span href="#map"><p><strong>Bodensee, Deutschland</strong></p></span>
+                <p>Mühlbachstraße 115 | 88662 Überlingen</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="images/place2.jpg" alt="Elsass">
+                <p><strong>Elsass, Frankreich</strong></p>
+                <p>Bulles et une nuit | 67530 Klingenthal</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="images/place3.jpg" alt="Portugal">
+                <p><strong>Portugal</strong></p>
+                <p>Estr. dos Alemães 2 | Santo Estevão</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="myCarousel" class="container-fluid carousel slide text-center" data-ride="carousel">
+    <h2>Was unsere Kunden sagen</h2>
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <h4>"Dieser Winzer ist der beste! Es gibt keinen Besseren auf der Welt"<br><span style="font-style:normal;">Michael Roe, Verifizierter Käufer</span>
+            </h4>
+        </div>
+        <div class="item">
+            <h4>"Ein Wort... WOW!!"<br><span style="font-style:normal;">John Doe, Weinhändler</span></h4>
+        </div>
+        <div class="item">
+            <h4>"Die besten Weine kaufe ich nur hier!"<br><span
+                    style="font-style:normal;">Chandler Bing, Sommelier</span></h4>
+        </div>
+        <div class="item">
+            <h4>"Was das tolle an diesem Winzer ist? Alles!!"<br><span style="font-style:normal;">Gunt Allan, Schauspieler</span>
+            </h4>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Zurück</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Weiter</span>
+    </a>
+</div>
+
+<div id="pricing" class="container-fluid bg-grey">
+    <div class="text-center">
+        <h2>Pakete</h2>
+        <h4>Entdecke eines unserer kulinarischen Weinpakete</h4>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 slideanim">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Wein Neuling</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong>5 Flaschen</strong> Merlot</p>
+                    <p><strong>5 Flaschen</strong> Riesling</p>
+                    <p><strong>5 Flaschen</strong> Spätburgunder</p>
+                    <p><strong>5 Flaschen</strong> Banyuls</p>
+                    <p><strong>1 Flasche</strong> Champagner</p>
+                </div>
+                <div class="panel-footer">
+                    <h3>50€</h3>
+                    <h4>einmalig</h4>
+                    <button class="btn btn-lg"><a href="pages/buy_product.html">Bestellen</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 slideanim">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Wein Trinker</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong>10 Flaschen</strong> Merlot</p>
+                    <p><strong>10 Flaschen</strong> Riesling</p>
+                    <p><strong>10 Flaschen</strong> Spätburgunder</p>
+                    <p><strong>10 Flaschen</strong> Banyuls</p>
+                    <p><strong>1 Flasche</strong> Champagner</p>
+                </div>
+                <div class="panel-footer">
+                    <h3>90€</h3>
+                    <h4>einmalig</h4>
+                    <button class="btn btn-lg"><a href="pages/buy_product.html">Bestellen</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 slideanim">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Sommelier</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong>15 Flaschen</strong> Merlot</p>
+                    <p><strong>15 Flaschen</strong> Riesling</p>
+                    <p><strong>15 Flaschen</strong> Spätburgunder</p>
+                    <p><strong>15 Flaschen</strong> Banyuls</p>
+                    <p><strong>1 Flasche</strong> Champagner</p>
+                </div>
+                <div class="panel-footer">
+                    <h3>130€</h3>
+                    <h4>einmalig</h4>
+                    <button class="btn btn-lg"><a href="pages/buy_product.html">Bestellen</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="container-fluid">
+    <h2 class="text-center">KONTAKT</h2>
+    <div class="row">
+        <div class="col-sm-5 slideanim">
+            <p>Kontaktiere uns und du erhältst eine Antwort in den nächsten 24 Stunden.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Bodensee, DE</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +49 89 358327</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> info@winzer-ancelotti.com</p>
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Nachricht"
+                      rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Senden</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map" class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.076010937146!2d9.184761315997532!3d47.760579979195185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a59198a10ad03%3A0xe922ea93fa40d5f0!2zTcO8aGxiYWNoc3RyYcOfZSAxMTUsIDg4NjYyIMOcYmVybGluZ2Vu!5e0!3m2!1sde!2sde!4v1499617000275"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<footer id="footer" class="container-fluid text-center bg-red">
+    <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>Copyright © 2017 WinzerAncelotti GmbH</p>
+    <br>
+    <a href="pages/impressum.html" title="Impressum">
+        <span>Impressum</span>
+    </a>
+</footer>
+
+</body>
+</html>
